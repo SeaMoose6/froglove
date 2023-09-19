@@ -1,0 +1,23 @@
+body{
+    color: navy;
+}
+.address {
+    margin: 3px;
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+    border: 2px;
+}
+.end {
+    color: navy;
+}
+.title {
+    font-size: 20px;
+}
+.bot-line{
+    margin-bottom: 20px;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+}
