@@ -29,6 +29,6 @@ body{
 .righty, .lefty{
     width: 45%;
 }
-.urls{
+li{
     margin-bottom: 20px;
 }
