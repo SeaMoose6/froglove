@@ -21,3 +21,14 @@ body{
     text-transform: uppercase;
     font-weight: bold;
 }
+.links, 
+.righty,
+.lefty{
+    float: left;
+}
+.righty, .lefty{
+    width: 45%;
+}
+.urls{
+    margin-bottom: 20px;
+}
