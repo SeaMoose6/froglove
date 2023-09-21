@@ -1,0 +1,16 @@
+.image{
+    border: 5px;
+    border-style: dashed;
+    border-color: red;
+    text-align: center;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+.title{
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
