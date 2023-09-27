@@ -16,7 +16,7 @@
 }
 body{
     background-color: darkred;
-    background-image: url("red bg.jpg");
+    background-image: url("../image/red bg.jpg");
 }
 div{
     margin: 0 20% 10% 20%;
