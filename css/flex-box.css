@@ -1,11 +1,114 @@
-.container{
+.blue{
+    background-color: aqua;
     display: flex;
-    border: 2px solid black;
-    justify-content: space-between;
+    /*flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
 }
+.bbox{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 2px;
+    margin-left: 10px;
+}
+.pone{
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+.ptwo{
+    width: 50px;
+    height: 50px;
+}
+.pthree{
+    width: 100px;
+    height: 50px;
+}
+.pfour{
+    width: 30px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
 .box{
     width: 50px;
     height: 75px;
     text-align: center;
+    justify-content: space-around;
+    margin: 10px;
+}
+.container{
+    display: flex;
     border: 2px solid black;
+    justify-content: space-between;
+    margin: 10px;
+}
+.top_right{
+    border: 2px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    align-items: center;
+    margin: 10px 20% 10px 20%;
+
+}
+.inner{
+    display: flex;
+    border: 2px solid red;
+    flex-direction: column;
+    margin: 5px 30px 5px 30px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid red;
+    margin: 10px;   
+    align-content: center; 
+}
+.bot_rigt{
+    border: 2px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 5px;
+}
+.one{
+    background-color: firebrick;
+    height: auto;
+}
+.two{
+    background-color: burlywood;
+}
+.three{
+    background-color: greenyellow;
+}
+.four{
+    background-color: seagreen;
+}
+.five{
+    background-color: mediumslateblue;
+}
+.six{
+    background-color: brown;
+}
+.seven{
+    background-color: darkgrey;
+}
+.eight{
+    background-color: darkolivegreen;
+}
+.nine{
+    background-color: hotpink;
+}
+.ten{
+    background-color: darkgrey;
 }
