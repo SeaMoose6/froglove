@@ -53,14 +53,12 @@
     justify-content: space-around;
     margin: 5px;
 }
-
 .mid{
     display: flex;
     justify-content: space-between;
     border: 2px solid red;
     align-items: center;
     margin: 10px 20% 10px 20%;
-
 }
 .inner{
     display: flex;
@@ -113,4 +111,89 @@
 }
 .ten{
     background-color: darkgrey;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background-color: greenyellow;
+    padding: 15px;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    text-align: left;
+    padding: 15px;
+}
+.article{
+    width: 60%;
+    padding: 15px;
+}
+.aside{
+    width: 20%;
+    background-color: rgb(204, 200, 146);
+    padding: 15px;
+}
+.nav{
+    width: 20%;
+    background-color: rgb(176, 216, 241);
+    padding: 15px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background-color: greenyellow;
+    padding: 15px;
+}
+.chal_four {
+    display: flex;
+    flex-direction: row;
+}
+.header_two{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: greenyellow;
+    padding: 15px;
+}
+.middle_two{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    text-align: left;
+    padding: 15px;
+}
+.article_two{
+    padding: 15px;
+    height: 300px;
+}
+.aside_two{
+    background-color: rgb(204, 200, 146);
+    padding: 15px;
+    width: 30%;
+}
+.nav_two{
+    background-color: rgb(176, 216, 241);
+    padding: 15px;
+    height: 560px;
+    width: 20%;
+}
+.footer_two{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: greenyellow;
+    padding: 15px;
+}
+.trip{
+    display: flex;
+    flex-direction: row;
+}
+.else{
+    width: 80%;
+}
+.doub{
+    width: 80%;
 }
