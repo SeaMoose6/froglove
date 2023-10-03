@@ -38,6 +38,7 @@
     text-align: center;
     justify-content: space-around;
     margin: 10px;
+    font-size: 40px;
 }
 .container{
     display: flex;
@@ -74,12 +75,12 @@
     margin: 10px;   
     align-content: center; 
 }
-.bot_rigt{
-    border: 2px solid red;
+.bot_right{
     display: flex;
-    align-content: center;
     justify-content: space-around;
-    margin: 5px;
+    border: 2px solid red;
+    flex-direction: column;
+    margin: 10px auto 10px 5px
 }
 .one{
     background-color: firebrick;
@@ -105,6 +106,7 @@
 }
 .eight{
     background-color: darkolivegreen;
+    margin: auto 0 auto auto;
 }
 .nine{
     background-color: hotpink;
