@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    background-color: rgb(37, 80, 54);
+    padding: 25px;
+}
+.title{
+    display: flex;
+    border: 5px black;
+    align-items: center;
+    width: 50%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: greenyellow;
+    border-radius: 5px;
+}
