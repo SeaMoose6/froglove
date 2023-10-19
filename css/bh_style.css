@@ -1,4 +1,4 @@
-body{
+.blue{
     color: navy;
 }
 .address {
@@ -8,10 +8,10 @@ body{
     font-weight: bold;
     border: 2px;
 }
-.end {
+.end{
     color: navy;
 }
-.title {
+.title{
     font-size: 20px;
 }
 .bot-line{

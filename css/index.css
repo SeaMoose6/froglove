@@ -5,27 +5,31 @@
     background-color: rgb(37, 80, 54);
     padding: 25px;
 }
-.title{
+.home_title{
     display: flex;
     border: 5px black;
     align-items: center;
     width: 50%;
 }
-.links{
+.letters{
+    margin-left: 5px;
+}
+.home_links{
     display: flex;
     align-items: center;
     width: 50%;
     justify-content: space-between;
+    font-size: larger;
 }
 .footer{
     display: flex;
     align-items: center;
 }
-.link{
+.home_link{
     text-decoration: none;
     color: black;
 }
-.link:hover{
+.home_link:hover{
     color: greenyellow;
-    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
 }
