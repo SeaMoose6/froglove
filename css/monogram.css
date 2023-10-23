@@ -1,0 +1,13 @@
+img {
+    width: 10%;
+    height: 10%;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mfooter{
+    display: flex;
+    flex-direction: column;
+}
