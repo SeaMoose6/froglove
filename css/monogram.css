@@ -2,6 +2,40 @@ img {
     width: 10%;
     height: 10%;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    color: navajowhite;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.mheader_left {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.mtitle{
+    margin-left: 15px;
+}
+.mheader_right{
+    margin: 10px;
+    color: navajowhite;
+}
+.hero{
+    height: 800px;
+    background-image: url("../image/console.jpg");
+    background-size: cover;
+    color: navajowhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.radio{
+    font-size: 40px;
+}
 .item {
     display: flex;
     flex-direction: row;
