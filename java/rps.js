@@ -1,0 +1,7 @@
+const rockBtn = document.getElementById('rock')
+const paperBtn = document.getElementById('paper')
+const scissorsBtn = document.getElementById('scissors')
+const results = document.querySelector('.result')
+const userImg = document.querySelector('.user-img')
+const compImg = document.querySelector('.comp-img')
+console.log(result)
