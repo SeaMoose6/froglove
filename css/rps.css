@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(184, 209, 231);
+    background-color: rgb(79, 140, 145);
 }
 
 main {
@@ -57,6 +57,10 @@ button {
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    background-color: rgb(80, 80, 224);
+    background-color: rgb(32, 65, 175);
     color:rgb(197, 212, 226)
+}
+button:hover{
+    border: 5px black;
+    color: yellow;
 }
