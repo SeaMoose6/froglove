@@ -64,3 +64,18 @@ button:hover{
     border: 5px black;
     color: yellow;
 }
+.scores{
+    display: flex;
+    flex-direction: row;
+}
+.comp-score{
+    display: flex;
+    margin-left: 50px;
+}
+.user-score{
+    display: flex;
+    margin-right: 50px;
+}
+.reset{
+    background-color: red;
+}
