@@ -45,6 +45,7 @@ resetBtn.addEventListener('click', () => {
     user_score = 0
     compWins.innerText = comp_score.toString()
     userWins.innerText = user_score.toString()
+    results.innerText = " "
     console.log(comp_score, user_score)
 })
 
@@ -83,6 +84,8 @@ function winLose (userChoice) {
         results.innerText = "Tie Game"
     }
     if (user_score == 3){
-        results.inner
+        results.innerText = "The User is the Champion!"
+    } else if (comp_score == 3){
+        results.innerText = "The Computer is the Champion!"
     }
 }
