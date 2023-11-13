@@ -71,3 +71,11 @@ button:hover{
 .reset{
     background-color: red;
 }
+
+/* media queries */
+@media (max-width: 900px){
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
