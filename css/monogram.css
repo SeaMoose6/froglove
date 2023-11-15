@@ -1,47 +1,58 @@
+p{
+    margin: 0.25em;
+}
 img {
-    width: 10%;
-    height: 10%;
+    width: 60%;
+    height: 60%;
 }
 header {
     position: sticky;
-    top: 50px;
+    top: 15px;
     width: 90%;
     max-width: 1800px;
     display: flex;
     background-color: #1a2456;
-    color: #ff8b68;
+    color: #f7ad96;
     width: auto;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    height: 50px;
+}
+h1{
+    font-family: sans-serif;
 }
 .mheader_left {
     display: flex;
     flex-direction: row;
-    margin-left: 0.3em;
+    margin-left: 0.2em;
     font-size: clamp(1.5rem, 5.5vw, 5rem);
     align-items: center;
     width: 40%;
 }
 .mtitle{
-    margin-left: 15px;
+    margin-left: 0.8em;
     font-size: 1rem;
 }
 .mheader_right{
-    margin: 0.5em;
-    color: #ff8b68;
+    margin: 0.1em;
+    color: #f7ad96;
+    font-size: clamp(0.25rem, 1vw, 1rem);
     justify-content: space-between;
+}
+.top_link{
+    margin-left: 1.5em;
 }
 .hero_section{
     background-color: #1a2456;
-    background-image: url("../image/console.jpg");
+    /* background-image: url("../image/console.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .hero{
     height: 800px;
-    color: #ff8b68;
+    color: #f7ad96;
     background-image: url("../image/console.jpg");
     background-size: cover;
     display: flex;
@@ -62,17 +73,36 @@ header {
     flex-direction: column;
 }
 a {
-    color: #ff8b68;
-    margin-left: 1.5em;
+    color: #f7ad96;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+a:hover{
+    text-decoration: underline;
+}
+.item_name{
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.item_rpice{
+    font-weight: lighter;
+    font-family: sans-serif;
 }
 .products{
-    max-width: 900px;
+    max-width: 1100px;
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 1em auto;
+    padding: 0.55em, auto;
+    color: #1a2456;
+}
+.product{
+    margin: 1.5em;
+    
 }
 .first{
     display: flex;
@@ -86,7 +116,20 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: #1a2456;
-    color: #ff8b68;
+    color: #f7ad96;
     justify-content: space-between;
     margin: auto;
+    padding: 1em;
+    font-family: sans-serif;
+    font-size: small;
+}
+h5{
+    font-weight: bold;
+}
+.address{
+    margin: 0em, 0;
+}
+button{
+    background-color: #f7ad96;
+    border-radius: 12px;
 }
