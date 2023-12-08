@@ -21,6 +21,9 @@
     justify-content: space-between;
     font-size: larger;
 }
+main{
+    height: 40em;
+}
 .footer{
     display: flex;
     align-items: center;
@@ -32,4 +35,57 @@
 .home_link:hover{
     color: greenyellow;
     box-shadow: 10px 5px 5px black;
+}
+form {
+    width: 90%;
+    margin: 3em auto;
+}
+label{
+    display: block;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.name_box{
+    margin: 0;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+.address_input{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.address_box{
+    width: 39em;
+}
+.state_city{
+    display: flex;
+    flex-direction: row;
+}
+.zip_country{
+    display: flex;
+    flex-direction: row;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+}
+.email_box{
+    width: 39em;
+    height: 2em;
 }
