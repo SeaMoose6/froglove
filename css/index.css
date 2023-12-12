@@ -22,7 +22,7 @@
     font-size: larger;
 }
 main{
-    height: 40em;
+    height: 50em;
 }
 .footer{
     display: flex;
@@ -36,56 +36,57 @@ main{
     color: greenyellow;
     box-shadow: 10px 5px 5px black;
 }
+
+
 form {
     width: 90%;
     margin: 3em auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: smaller;
+    justify-content: center;
 }
 label{
     display: block;
 }
-.name{
+.form_box{
     display: flex;
     flex-direction: row;
     width: auto;
-    justify-content: space-between;
 }
-.names{
+.title_box{
+    width: 20em;
+}
+.form_sub_box{
     display: flex;
     flex-direction: row;
-    margin: 0;
-}
-.name_box{
-    margin: 0;
-}
-.address{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-between;
-}
-.address_input{
-    display: flex;
-    flex-direction: row;
-    margin: 0;
 }
 .address_box{
     width: 39em;
 }
-.state_city{
-    display: flex;
-    flex-direction: row;
-}
-.zip_country{
-    display: flex;
-    flex-direction: row;
-}
-.email{
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-between;
-}
 .email_box{
-    width: 39em;
     height: 2em;
+}
+.upload_button{
+    width: 10em;
+    height: 2em;
+}
+.positions{
+    height: 2em;
+}
+.photo_button{
+    width: 20em;
+    height: 2em;    
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.symbol{
+    color: red;
+}
+.terms{
+    text-decoration: none;
+    color: aqua;
 }

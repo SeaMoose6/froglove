@@ -28,9 +28,11 @@
           <p>Please complete the form below to apply for a position with us</p>
           <hr>
           <form>
-               <div class="name">
-                    <p>Full Name</p>
-                    <div class="names">
+               <div class="name form_box">
+                    <div class="title_box">
+                         <p>Full Name <span class="symbol">*</span></p>
+                    </div>
+                    <div class="names form_sub_box">
                          <div class="first">
                               <input type="text" class="name_box">
                               <label for="first-name">First Name</label>
@@ -45,8 +47,10 @@
                          </div>
                     </div>
                </div>
-               <div class="address">
-                    <p>Current Address</p>
+               <div class="address form_box">
+                    <div class="title_box">
+                         <p>Current Address</p>
+                    </div>
                     <div class="addres_input">
                          <div class="addres_one">
                               <input type="text" class="address_box">
@@ -56,7 +60,7 @@
                               <input type="text" class="address_box">
                               <label for="street">Street Address Line 2</label>
                          </div>
-                         <div class="state_city">
+                         <div class="state_city form_sub_box">
                               <div class="city">
                                    <input type="text" class="city_box">
                                    <label for="city">City</label>
@@ -66,7 +70,7 @@
                                    <label for="state">State / Province</label>
                               </div>
                          </div>
-                         <div class="zip_country">
+                         <div class="zip_country form_sub_box">
                               <div class="zip">
                                    <input type="text" class="zip_box">
                                    <label for="zip">Postal / Zip Code</label>
@@ -84,15 +88,73 @@
                          </div>
                     </div>
                </div>
-               <div class="email">
-                    <p>Email Address</p>
+               <div class="email form_box">
+                    <div class="title_box">
+                         <p>Email Address <span class="symbol">*</span></p>
+                    </div>
                     <input type="text" placeholder="ex: myname@example.com" class="email_box">
                </div>
-               <div class="phone">
-                    <p>Phone Number</p>
-                    <input type="tel" name="" id="">
+               <div class="phone_info form_box">
+                    <div class="title_box">
+                         <p>Phone Number</p>
+                    </div>
+                    <div class="area_phone form_sub_box">
+                         <div class="area">
+                              <input type="tel" class="city_box">
+                              <label for="area code">Area Code</label>
+                         </div>
+                         <div class="phone">
+                              <input type="tel" class="city_box">
+                              <label for="phone number">Phone Number</label>
+                         </div>
+                    </div>
                </div>
-\
+               <div class="position form_box">
+                    <div class="title_box">
+                         <p>Applying for Position <span class="symbol">*</span></p>
+                    </div>
+                    <div class="positions form_sub_box">
+                         <select name="country" id="country">
+                              <option value="Electrician">Electrician</option>
+                              <option value="IT">IT</option>
+                              <option value="Programmer">Programmer</option>
+                              <option value="Plumber">Plumber</option>
+                              <option value="Lawyer">Lawyer</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="date form_box">
+                    <div class="title_box">
+                         <p>Start Date</p>
+                    </div>
+                    <div class="date_input">
+                         <input type="date">
+                         <label for="date">Date</label>
+                    </div>
+               </div>
+               <div class="resume form_box">
+                    <div class="title_box">
+                         <p>Upload Resume <span class="symbol">*</span></p>
+                    </div>
+                    <div class="file form_sub_box">
+                         <input type="file" class="upload_button">
+                    </div>
+               </div>
+               <div class="take_photo form_box">
+                    <div class="title_box">
+                         <p>Take Photo</p>
+                    </div>
+                    <div class="form_sub_box">
+                         <input type="button" class="photo_button" value="Take Photo">
+                    </div>
+               </div>
+               <div class="agree form_box">
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <label for="agreement">I agree to <span><a href="terms and conditions" class="terms">terms & conditions.</a></span> <span class="symbol">*</span></label>
+               </div>
+               <div class="submit">
+                    <input type="submit" name="submit" id="submit">
+               </div>
           </form>
      </main>
 
