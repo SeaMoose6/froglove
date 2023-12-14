@@ -1,9 +1,15 @@
 .header{
     display: flex;
     justify-content: space-between;
-    height: 125px;
+    height: 100px;
     background-color: rgb(37, 80, 54);
     padding: 25px;
+    font-family: fantasy;
+    border-radius: 6px;
+    color: black;
+}
+i{
+    font-size: xx-large;
 }
 .home_title{
     display: flex;
@@ -22,7 +28,7 @@
     font-size: larger;
 }
 main{
-    height: 50em;
+    height: 60em;
 }
 .footer{
     display: flex;
@@ -37,7 +43,9 @@ main{
     box-shadow: 10px 5px 5px black;
 }
 
-
+input{
+    margin-right: 1rem;
+}
 form {
     width: 90%;
     margin: 3em auto;
@@ -49,6 +57,7 @@ form {
 }
 label{
     display: block;
+    margin-bottom: 2em;
 }
 .form_box{
     display: flex;
@@ -67,6 +76,7 @@ label{
 }
 .email_box{
     height: 2em;
+    margin-bottom: 2em;
 }
 .upload_button{
     width: 10em;
@@ -74,10 +84,12 @@ label{
 }
 .positions{
     height: 2em;
+    margin-bottom: 2em;
 }
 .photo_button{
     width: 20em;
-    height: 2em;    
+    height: 2em;   
+     
 }
 .submit{
     display: flex;
