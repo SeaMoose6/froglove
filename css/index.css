@@ -28,7 +28,34 @@ i{
     font-size: larger;
 }
 main{
-    height: 60em;
+    height: 85em;
+}
+/* .card{
+    position: absolute;
+    top: 20px;
+    right: 2vw;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.top{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color:darkviolet;
+}
+.bottom{
+    height: 200px;
+    width: 400px;
+    background-color:mediumseagreen;
+} */
+.frontend_mentor{
+    background-image: "/image/background.svg";
 }
 .footer{
     display: flex;
