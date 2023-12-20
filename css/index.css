@@ -55,7 +55,34 @@ main{
     background-color:mediumseagreen;
 } */
 .frontend_mentor{
-    background-image: "/image/background.svg";
+    background-color: black;
+    background-image: url("/image/background.svg");
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+}
+.FAQs{
+    margin-left: 2em;
+}
+.questions{
+    position: fixed;
+    background-color: white;
+    border-radius: 12px;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.faq_btn{
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vh;
 }
 .footer{
     display: flex;
