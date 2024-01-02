@@ -61,6 +61,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Work Sans', sans-serif;
 }
 .title{
     display: flex;
@@ -73,16 +74,25 @@ main{
     position: fixed;
     background-color: white;
     border-radius: 12px;
+    margin: 5%;
 }
 .question{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2%;
+}
+.answer{
+    margin: 2%;
+    display: none;
+}
+.minus{
+    display: none;
 }
 .faq_btn{
     border-radius: 50%;
-    width: 5vw;
-    height: 5vh;
+    width: 8vw;
+    height: 8vh;
 }
 .footer{
     display: flex;
