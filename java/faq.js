@@ -1,19 +1,25 @@
-const questionAns = document.querySelector('.answer')
-const plusImgBtn = document.querySelector(".plus")
-const minImgBtn = document.querySelector(".minus")
-const plusBtn = document.getElementById('plus')
-const minBtn = document.getElementById('minus')
-const plusBtns = document.querySelectorAll('plus')
+const plusBtns = document.querySelectorAll('.plus')
+const minBtns = document.querySelectorAll('.minus')
+const questionsAns = document.querySelectorAll('.answer')
+const plusImgBtns = document.querySelectorAll(".plus")
+const minImgBtns = document.querySelectorAll(".minus")
+const header = document.querySelector('.header')
+const hamburger = document.querySelector('.hamburger')
 
-
-plusBtn.addEventListener('click', () =>{
-    questionAns.style.display = "block"
-    plusImgBtn.style.display = "none"
-    minImgBtn.style.display = "block"
-})
-
-minImgBtn.addEventListener('click', () =>{
-    questionAns.style.display = "none"
-    plusImgBtn.style.display = "block"
-    minImgBtn.style.display = "none"
-})
+console.log(plusBtns)
+plusBtns.forEach(plus => {
+    plus.addEventListener('click', () =>{
+        let index = plus.id
+        questionsAns[index].style.display='block'
+        plusImgBtns[index].style.display='none'
+        minImgBtns[index].style.display='block'
+    })
+});
+minBtns.forEach(min => {
+    min.addEventListener('click', () =>{
+        let index = min.id
+        questionsAns[index].style.display='none'
+        plusImgBtns[index].style.display='block'
+        minImgBtns[index].style.display='none'
+    })
+});
