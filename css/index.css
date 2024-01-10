@@ -11,6 +11,27 @@
 .hamburger{
     display: none;
 }
+.menu{
+    display: none;
+    background-color: rgb(48, 83, 62);
+}
+.menu_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: x-large;
+}
+.menu_link{
+    margin: 0.5em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu_link:hover{
+    color: greenyellow;
+    box-shadow: 10px 5px 5px black;
+}
 i{
     font-size: xx-large;
 }
@@ -65,6 +86,7 @@ main{
     justify-content: center;
     align-items: center;
     font-family: 'Work Sans', sans-serif;
+    position: relative;
 }
 .end{
     height: 80vh;
@@ -85,7 +107,7 @@ main{
     border-radius: 12px;
     margin: 5%;
     position: absolute;
-    top: 30vh;
+    top: 15vh;
     width: 70%;
     color: #221524;
 }
@@ -180,7 +202,7 @@ label{
     text-decoration: none;
     color: aqua;
 }
-@media (max-width: 600px){
+@media (max-width: 1020px){
     .home_links{
         justify-content: right;
     }

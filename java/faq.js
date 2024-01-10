@@ -5,6 +5,7 @@ const plusImgBtns = document.querySelectorAll(".plus")
 const minImgBtns = document.querySelectorAll(".minus")
 const header = document.querySelector('.header')
 const hamburger = document.querySelector('.hamburger')
+const menu = document.querySelector('.menu')
 
 console.log(plusBtns)
 plusBtns.forEach(plus => {
@@ -23,3 +24,12 @@ minBtns.forEach(min => {
         minImgBtns[index].style.display='none'
     })
 });
+
+hamburger.addEventListener('click', ()=>{
+    console.log("clicked")
+    if (menu.style.display == "none"){
+        menu.style.display = "block"
+    }else{
+        menu.style.display = "none"
+    }
+})
