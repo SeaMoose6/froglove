@@ -66,6 +66,47 @@ main{
 .sub_title{
     justify-content: center;
 }
+.card{
+    padding: 15px;
+    width: 18em;
+    height: 10em;
+    position: relative;
+    align-self: center;
+}
+.card_title{
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1em;
+}
+.card_content{
+    font-weight: 50;
+}
+.card_img{
+    position: absolute;
+    justify-self: right;
+    right: 2em;
+    margin: 1em;
+}
+.card_list{
+    display: flex;
+    flex-direction: row;
+}
+.team{
+    background-color:  #ea5353;
+    height: 0.2em;
+}
+.sup{
+    height: 0.2em;
+    background-color: #45d3d3;
+}
+.calc{
+    height: 0.2em;
+    background-color: #549ef2;
+}
+.karma{
+    height: 0.2em;
+    background-color: #fcaf4a;
+}
 /* .card{
     position: absolute;
     top: 20px;
