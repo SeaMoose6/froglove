@@ -4,9 +4,10 @@
     height: 100px;
     background-color: rgb(37, 80, 54);
     padding: 25px;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
     color: black;
+    margin-bottom: 4em;
 }
 .hamburger{
     display: none;
@@ -57,23 +58,38 @@ main{
     margin-bottom: 800px;
 }
 .cards{
-    font-family: poppins
+    font-family: 'Poppins', sans-serif;
+    color:  #4c4e61;
 }
 .title, .title2{
+    display: flex;
     justify-content: center;
+    text-align: center;
     font-size: xx-large;
+    margin: 0;
+}
+.title2{
+    color: rgb(41, 41, 46);
+    font-weight: bold;
 }
 .sub_title{
+    display: flex;
     justify-content: center;
+    text-align: center;
+    color: #a3a5ae;
 }
 .card{
     padding: 15px;
-    width: 18em;
-    height: 10em;
+    width: 300px;
+    height: 14em;
     position: relative;
     align-self: center;
+    border-radius: 12px;
+    box-shadow: 4px 10px 4px 4px rgb(201, 199, 199);
+    margin: 10px;
 }
 .card_title{
+    color: rgb(41, 41, 46);
     font-weight: bold;
     font-size: x-large;
     margin-top: 1em;
@@ -84,28 +100,26 @@ main{
 .card_img{
     position: absolute;
     justify-self: right;
-    right: 2em;
+    right: 1em;
     margin: 1em;
 }
 .card_list{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .team{
-    background-color:  #ea5353;
-    height: 0.2em;
+    border-top: 5px solid #ea5353;
 }
 .sup{
-    height: 0.2em;
-    background-color: #45d3d3;
+    border-top: 5px solid #45d3d3;
 }
 .calc{
-    height: 0.2em;
-    background-color: #549ef2;
+    border-top: 5px solid #549ef2;
 }
 .karma{
-    height: 0.2em;
-    background-color: #fcaf4a;
+    border-top: 5px solid #fcaf4a;
+
 }
 /* .card{
     position: absolute;
@@ -186,6 +200,8 @@ main{
 .footer{
     display: flex;
     align-items: center;
+    justify-self: end;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .home_link{
     text-decoration: none;
@@ -264,5 +280,13 @@ label{
     }
     .home_link{
         display: none;
+    }
+}
+@media (max-width: 800px){
+    .card_list{
+        flex-direction: column;
+    }
+    .mid_cards{
+        align-self: center;
     }
 }
