@@ -1,0 +1,217 @@
+<h1>Job Application</h1>
+          <p>Please complete the form below to apply for a position with us</p>
+          <hr>
+          <form>
+               <div class="name form_box">
+                    <div class="title_box">
+                         <p>Full Name <span class="symbol">*</span></p>
+                    </div>
+                    <div class="names form_sub_box">
+                         <div class="first">
+                              <input type="text" class="name_box">
+                              <label for="first-name">First Name</label>
+                         </div>
+                         <div class="middle">
+                              <input type="text" class="name_box">
+                              <label for="middle-name">Middle Name</label>
+                         </div>
+                         <div class="last">
+                              <input type="text" class="name_box">
+                              <label for="last-name">Last Name</label>
+                         </div>
+                    </div>
+               </div>
+               <div class="address form_box">
+                    <div class="title_box">
+                         <p>Current Address</p>
+                    </div>
+                    <div class="addres_input">
+                         <div class="addres_one">
+                              <input type="text" class="address_box">
+                              <label for="street">Street Address</label>
+                         </div>
+                         <div class="addres_two">
+                              <input type="text" class="address_box">
+                              <label for="street">Street Address Line 2</label>
+                         </div>
+                         <div class="state_city form_sub_box">
+                              <div class="city">
+                                   <input type="text" class="city_box">
+                                   <label for="city">City</label>
+                              </div>
+                              <div class="state">
+                                   <input type="text" class="city_box">
+                                   <label for="state">State / Province</label>
+                              </div>
+                         </div>
+                         <div class="zip_country form_sub_box">
+                              <div class="zip">
+                                   <input type="text" class="zip_box">
+                                   <label for="zip">Postal / Zip Code</label>
+                              </div>
+                              <div class="country">
+                                   <select name="country" id="country">
+                                        <option value="USA">USA</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Russia">Russia</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Spain">Spain</option>
+                                   </select>
+                                   <label for="country">Country</label>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="email form_box">
+                    <div class="title_box">
+                         <p>Email Address <span class="symbol">*</span></p>
+                    </div>
+                    <input type="text" placeholder="ex: myname@example.com" class="email_box">
+               </div>
+               <div class="phone_info form_box">
+                    <div class="title_box">
+                         <p>Phone Number</p>
+                    </div>
+                    <div class="area_phone form_sub_box">
+                         <div class="area">
+                              <input type="tel" class="city_box">
+                              <label for="area code">Area Code</label>
+                         </div>
+                         <div class="phone">
+                              <input type="tel" class="city_box">
+                              <label for="phone number">Phone Number</label>
+                         </div>
+                    </div>
+               </div>
+               <div class="position form_box">
+                    <div class="title_box">
+                         <p>Applying for Position <span class="symbol">*</span></p>
+                    </div>
+                    <div class="positions form_sub_box">
+                         <select name="country" id="country">
+                              <option value="Electrician">Electrician</option>
+                              <option value="IT">IT</option>
+                              <option value="Programmer">Programmer</option>
+                              <option value="Plumber">Plumber</option>
+                              <option value="Lawyer">Lawyer</option>
+                         </select>
+                    </div>
+               </div>
+               <div class="date form_box">
+                    <div class="title_box">
+                         <p>Start Date</p>
+                    </div>
+                    <div class="date_input">
+                         <input type="date">
+                         <label for="date">Date</label>
+                    </div>
+               </div>
+               <div class="resume form_box">
+                    <div class="title_box">
+                         <p>Upload Resume <span class="symbol">*</span></p>
+                    </div>
+                    <div class="file form_sub_box">
+                         <input type="file" class="upload_button">
+                    </div>
+               </div>
+               <div class="take_photo form_box">
+                    <div class="title_box">
+                         <p>Take Photo</p>
+                    </div>
+                    <div class="form_sub_box">
+                         <input type="button" class="photo_button" value="Take Photo">
+                    </div>
+               </div>
+               <div class="agree form_box">
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <label for="agreement" class="">I agree to <span><a href="terms and conditions" class="terms">terms & conditions.</a></span> <span class="symbol">*</span></label>
+               </div>
+               <div class="submit">
+                    <input type="submit" name="submit" id="submit">
+               </div>
+          </form>
+
+
+input{
+    margin-right: 1rem;
+}
+form {
+    width: 90%;
+    margin: 3em auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: smaller;
+    justify-content: center;
+}
+label{
+    display: block;
+    margin-bottom: 2em;
+}
+.form_box{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.title_box{
+    width: 20em;
+}
+.form_sub_box{
+    display: flex;
+    flex-direction: row;
+}
+.address_box{
+    width: 39em;
+}
+.email_box{
+    height: 2em;
+    margin-bottom: 2em;
+}
+.upload_button{
+    width: 10em;
+    height: 2em;
+}
+.positions{
+    height: 2em;
+    margin-bottom: 2em;
+}
+.photo_button{
+    width: 20em;
+    height: 2em;   
+     
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.symbol{
+    color: red;
+}
+.terms{
+    text-decoration: none;
+    color: aqua;
+}
+/* .card{
+    position: absolute;
+    top: 20px;
+    right: 2vw;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.top{
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color:darkviolet;
+}
+.bottom{
+    height: 200px;
+    width: 400px;
+    background-color:mediumseagreen;
+} */

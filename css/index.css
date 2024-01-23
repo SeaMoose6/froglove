@@ -121,30 +121,6 @@ main{
     border-top: 5px solid #fcaf4a;
 
 }
-/* .card{
-    position: absolute;
-    top: 20px;
-    right: 2vw;
-    height: 50px;
-    width: 50px;
-    background-color: goldenrod;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
-.top{
-    position: relative;
-    height: 200px;
-    width: 400px;
-    background-color:darkviolet;
-}
-.bottom{
-    height: 200px;
-    width: 400px;
-    background-color:mediumseagreen;
-} */
 .frontend_mentor{
     background-color: black;
     background-image: url("/image/background.svg");
@@ -211,65 +187,68 @@ main{
     color: greenyellow;
     box-shadow: 10px 5px 5px black;
 }
-
-input{
-    margin-right: 1rem;
+:root {
+    --primary-red: hsl(0, 100%, 74%);
 }
-form {
-    width: 90%;
-    margin: 3em auto;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: gray;
-    font-size: smaller;
+form{
+    position: relative;
+    background-color: var(--primary-red);
+    background-image: url(/image/bg-intro-desktop.png);
+}
+.trial{
+    position: absolute;
+    display: flex;
+    right: 8%;
+    width: 41.8vw;
+    top: 30px;
+    border-radius: 12px;
     justify-content: center;
+    margin-bottom: 0;
+    color: white;
+    background-color: #3b2855;
+    box-shadow: 2px 2px;
+    box-shadow: #000000;
 }
-label{
-    display: block;
-    margin-bottom: 2em;
+.bold{
+    font-weight: bold;
+}
+.form_sheet{
+    position: absolute;
+    display: flex;
+    right: 8%;
+    top: 100px;
+    width: 35vw;
+    height: 30vh;
+    border-radius: 12px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    box-shadow: 0 2px 0 0 ;
 }
 .form_box{
-    display: flex;
-    flex-direction: row;
-    width: auto;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    border: gray;
 }
-.title_box{
-    width: 20em;
+.submit_btn{
+    width: 103%;
+    height: 2.5em;
+    margin-bottom: 0;
+    background-color: hsl(143, 59%, 51%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 0 0;
 }
-.form_sub_box{
-    display: flex;
-    flex-direction: row;
+.tos{
+    font-size: x-small;
+    justify-self: center;
+    margin: 0;
 }
-.address_box{
-    width: 39em;
-}
-.email_box{
-    height: 2em;
-    margin-bottom: 2em;
-}
-.upload_button{
-    width: 10em;
-    height: 2em;
-}
-.positions{
-    height: 2em;
-    margin-bottom: 2em;
-}
-.photo_button{
-    width: 20em;
-    height: 2em;   
-     
-}
-.submit{
-    display: flex;
-    justify-content: center;
-}
-.symbol{
-    color: red;
-}
-.terms{
-    text-decoration: none;
-    color: aqua;
+.tos_link{
+    color: hsl(0, 100%, 74%);
 }
 @media (max-width: 1020px){
     .home_links{
