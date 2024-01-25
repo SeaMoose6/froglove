@@ -194,29 +194,50 @@ form{
     position: relative;
     background-color: var(--primary-red);
     background-image: url(/image/bg-intro-desktop.png);
+    height: 70vh;
+    font-family: 'Poppins', sans-serif;
 }
 .trial{
     position: absolute;
     display: flex;
     right: 8%;
-    width: 41.8vw;
-    top: 30px;
+    width: 35vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 80px;
     border-radius: 12px;
     justify-content: center;
     margin-bottom: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #3b2855;
-    box-shadow: 2px 2px;
-    box-shadow: #000000;
+    box-shadow: 2px 2px rgb(165, 66, 66);
+    font-size: small;
+}
+.trial:hover{
+    cursor: pointer;
 }
 .bold{
     font-weight: bold;
+}
+.text_box{
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    width: 300px;
+    color: white;
+}
+.lrg{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.sml{
+    font-size: small;
 }
 .form_sheet{
     position: absolute;
     display: flex;
     right: 8%;
-    top: 100px;
+    top: 150px;
     width: 35vw;
     height: 30vh;
     border-radius: 12px;
@@ -224,7 +245,8 @@ form{
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    box-shadow: 0 2px 0 0 ;
+    box-shadow: 0 2px 0 0 rgb(165, 66, 66);
+    background-color: white;
 }
 .form_box{
     width: 100%;
@@ -240,7 +262,10 @@ form{
     color: white;
     border-radius: 5px;
     border: none;
-    box-shadow: 0 2px 0 0;
+    box-shadow: 0 2px 0 0 grey;
+}
+.submit_btn:hover{
+    cursor: pointer;
 }
 .tos{
     font-size: x-small;
@@ -249,6 +274,10 @@ form{
 }
 .tos_link{
     color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+.tos_link:hover{
+    text-decoration: underline;
 }
 @media (max-width: 1020px){
     .home_links{
@@ -267,5 +296,36 @@ form{
     }
     .mid_cards{
         align-self: center;
+    }
+    .form_sheet{
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 70%;
+    }
+    .trial{
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 70%;
+    }
+    .text_box{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
     }
 }
