@@ -46,7 +46,17 @@
         top:50%;
         transform:translate(0 -50%);
         font-size:24pt;
+        left: 300px;
     }
+    .content {
+        position: absolute;
+        text-align:center;
+        width:200px;
+        top:50%;
+        transform:translate(0 -50%);
+        font-size:24pt;
+        margin-top: 100px;
+      }
     .box4_1{
         display: inline-block;
         position: absolute;
@@ -55,6 +65,8 @@
         top: 0px;
         left: 100px;
         background: yellow;
+        transform-origin: top right;
+        transition: all 1s;
     }
     .box4_2{
         display: inline-block;
@@ -64,6 +76,8 @@
         left: 0px;
         top: 100px;
         background: blue;
+        transform-origin: bottom left;
+        transition: all 1s;
     }
     .box4_3{
         display: inline-block;
@@ -73,6 +87,8 @@
         top: 0px;
         left: 0px;
         background: red;
+        transform-origin: top left;
+        transition: all 1s;
     }
     .box4_4{
         display: inline-block;
@@ -82,5 +98,19 @@
         left: 100px;
         top: 100px;
         background: green;
-      
+        transform-origin: bottom right;
+        transition: all 1s;
+    }
+    .chal_4:hover .box4_1 {
+        transform: rotateZ(-90deg);
+    }
+    .chal_4:hover .box4_2 {
+        transform: rotateZ(-90deg);
+    }
+    .chal_4:hover .box4_3 {
+        transform: rotateZ(90deg);
+    }
+    .chal_4:hover .box4_4 {
+        transform: rotateZ(90deg);
+    
     }
