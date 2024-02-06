@@ -112,5 +112,84 @@
     }
     .chal_4:hover .box4_4 {
         transform: rotateZ(90deg);
+    }
+    .element {
+        /* position: absolute; */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        /* animation: pulse 5s linear alternate infinite; */
+    }
+    body{
+        position: relative;
+    }
     
+    @keyframes pulse {
+        0% {
+            left: -120px;
+            transform: rotate(0deg);
+        }
+        50%{
+            left: 50%;
+            transform: rotate(180deg);
+        }
+        100% {
+            left: 100%;
+            transform: rotate(360deg);
+        }
+    }
+    .submit{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        border: solid rgb(60, 175, 60);
+        color: rgb(60, 175, 60);
+        width: 300px;
+        height: 150px;
+        font-size: xx-large;
+        border-radius: 150px;
+    }
+    .check{
+        color: rgb(10, 10, 10);
+        width: 50px;
+        opacity: 0%;
+    }
+    button:hover{
+        animation: ease-in .5s cicle;
+        /* animation: check 1s; */
+    }
+    button:hover{
+        animation: check 1s ;
+
+    }
+    @keyframes cicle{
+        0% {
+        }
+        50%{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        100% {
+            background-color: rgb(60, 175, 60);
+
+        }
+    }
+    @keyframes check{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+
     }
