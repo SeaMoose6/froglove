@@ -123,7 +123,8 @@
         height: 100px;
         border-radius: 50%;
         background-color: greenyellow;
-        /* animation: pulse 5s linear alternate infinite; */
+        animation: pulse 1s ease-in-out alternate infinite;
+        box-shadow: 5px 5px 5px 2px rgba(0, 0, 0);
     }
     body{
         position: relative;
@@ -133,21 +134,26 @@
         0% {
             left: -120px;
             transform: rotate(0deg);
+            transform: translateY(5px);
+            box-shadow: 5px 5px 20px 2px rgba(0, 0, 0);
         }
         50%{
             left: 50%;
-            transform: rotate(180deg);
+            /* transform: rotate(180deg); */
         }
         100% {
             left: 100%;
             transform: rotate(360deg);
+            transform: translateY(-5px);
         }
     }
     .submit{
+        position: relative;
         margin-top: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     button{
         border: solid rgb(60, 175, 60);
@@ -156,19 +162,27 @@
         height: 150px;
         font-size: xx-large;
         border-radius: 150px;
+        overflow: hidden;
+    }
+    .text{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        right: 40%;
     }
     .check{
-        color: rgb(10, 10, 10);
-        width: 50px;
-        opacity: 0%;
+        font-size: xx-large;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: xx-large;
+        opacity: 0;
     }
-    button:hover{
-        animation: ease-in .5s cicle;
+    button:focus{
+        animation: ease-in .5s cicle forwards;
         /* animation: check 1s; */
     }
-    button:hover{
-        animation: check 1s ;
-
+    button:focus + .check{
+        animation: ease-in .5s check forwards;
     }
     @keyframes cicle{
         0% {
@@ -181,15 +195,17 @@
 
         100% {
             background-color: rgb(60, 175, 60);
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
 
         }
     }
     @keyframes check{
         0%{
-            opacity: 0%;
+            opacity: 0;
         }
         100%{
-            opacity: 100%;
+            opacity: 100;
         }
-
     }
