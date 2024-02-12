@@ -1,0 +1,52 @@
+header{
+    display: flex;
+    flex-direction: row;
+    border: solid black;
+    align-items: center;
+    padding: 3px;
+    justify-content: space-between;
+}
+.title{
+
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+.link{
+    margin: 25px;
+}
+.signup{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+}
+main{
+    height: 72vh;
+    border: solid black;
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+.heading{
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+.sub{
+    margin-bottom: 1.5em;
+}
+.learn{
+    margin-bottom: 4em;
+}
+.spons{
+    margin-bottom: .5em;
+}
+.right{
+    height: 50vh;
+}
+.image{
+    height: 60vh;
+}
