@@ -2,26 +2,39 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     padding: 3px;
     justify-content: space-between;
+}
+body{
+    color: grey;
+}
+.grey{
+    color: grey;
 }
 .header_left{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-self: start;
+}
+.signup{
+    display: flex;
+    justify-self: end;
+    align-items: center;
 }
 .f_list{
-    top: 65px;
-    left: 60px;
-    position: absolute;
     height: 0;
     overflow: hidden;
     list-style-type: none;
-    width: 90px;
+    width: 100px;
+    /* border: solid black; */
+    margin-left: -100px;
+    margin-top: 40px;
+    padding: 0;
 }
 .f_menu:hover + .f_list{
-    animation: ease-in-out 2s f_list forwards;
+    animation: ease-in-out 1s f_list forwards;
 }
 @keyframes f_list{
     0%{
@@ -33,16 +46,17 @@ header{
 
 }
 .c_list{
-    top: 65px;
-    left: 185px;
-    position: absolute;
     height: 0;
     overflow: hidden;
     list-style-type: none;
     width: 90px;
+    /* border: solid black; */
+    margin-left: -100px;
+    margin-top: 40px;
+    padding: 0;
 }
 .c_menu:hover + .c_list{
-    animation: ease-in-out 2s f_list forwards;
+    animation: ease-in-out 1s f_list forwards;
 }
 .links{
     display: flex;
@@ -53,12 +67,12 @@ header{
 }
 .careers, .about{
     text-decoration: none;
-    color: black;
 }
 .signup{
     display: flex;
+    margin-left: 20%;
     flex-direction: row;
-    justify-self: end;
+    justify-self: right;
 }
 .up{
     display: none;
@@ -70,35 +84,71 @@ header{
     text-decoration: none;
     margin-right: 5px;
     align-self: center;
-    color: black;
 }
 .register_btn{
     border-radius: 12px;
     height: 3em;
-    width: 7em;
+    width: 90%;
     font-weight: bold;
     font-size: small;
+    border: solid grey 2px;
+}
+.hamburger{
+    display: none;
+    font-size: xx-large;
+    color: black;
+}
+.h_login{
+    text-decoration: none;
+}
+.h_signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: none;
+    position: absolute;
+    left: 40%;
+    background-color: white;
+    width: 60%;
+    height: 120vh;
+    top: 0;
+    font-size: large;
+}
+.close{
+    display: flex;
+    justify-self: end;
+
 }
 main{
     height: 72vh;
     padding: 4em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2em;
 }
 .heading{
     font-size: 6em;
     font-weight: bold;
     margin-bottom: .5em;
+    width: 6em;
+    color: black;
 }
 .sub{
     margin-bottom: 1.5em;
+    font-size: x-large;
+    /* font-weight: bold; */
+    color: grey;
+    width: 15em;
+    text-align: left;
 }
 .learn{
-    margin-bottom: 4em;
 }
 .learn_btn{
+    background-color: black;
+    color: white;
     border-radius: 12px;
     height: 3em;
     width: 8em;
@@ -106,11 +156,86 @@ main{
     font-size: large;
 }
 .spons{
-    margin-bottom: .5em;
+    margin: .5em;
+}
+.sponsors{
+    margin: 1em;
 }
 .right{
     height: 50vh;
 }
 .image{
     height: 60vh;
+}
+.mobile_img{
+    display: none;
+}
+@media (max-width: 1040px){
+    header{
+        justify-content: space-between;
+    }
+    .hamburger{
+        display: block;
+    }
+    .signup{
+        display: none;
+    }
+    .header_left{
+        display: none;
+    }
+    .f_list{
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    .c_list{
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    main{
+        flex-direction: column-reverse;
+        margin: 10px;
+        padding: 0;
+        padding-top: 10em;
+        justify-content: center;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+    }
+    .heading{
+        display: flex;
+        margin-top: 2em;
+        font-size: 2.7em;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .sub{
+        width: 100%;
+        text-align: center;
+    }
+    .learn{
+        display: flex;
+        justify-content: center;
+    }
+    .learn_btn{
+        background-color: black;
+        color: white;
+    }
+    .spons{
+        display: flex;
+        justify-content: center;
+        width: 95vw;
+        margin-left: -10px;
+        height: 7vh;
+    }
+    .image{
+        display: none;
+    }
+    .mobile_img{
+        display: block;
+        margin-top: 40px;
+        width: 95vw;
+    }
+
 }

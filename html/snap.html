@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/snap.css">
     <title>Document</title>
 </head>
 <body>
     <header>
+        <div class="title">
+            <img src="../image/snap_images/logo.svg" alt="">
+        </div>
         <div class="header_left">
-            <div class="title">
-                <img src="../image/snap_images/logo.svg" alt="">
-            </div>
             <div class="links">
                 <div class="link f_menu">Features <img class='down'src="../image/snap_images/icon-arrow-down.svg" alt=""><img class="up" src="../image/snap_images/icon-arrow-up.svg" alt=""></div>
                 <ul class="f_list">
@@ -26,16 +27,40 @@
                     <li>Our Team</li>
                     <li>Blog</li>
                 </ul>
-                <div class="link"><a class='careers' href="">Careers</a></div>
-                <div class="link about"><a class='about' href="">About</a></div>
+                <div class="link"><a class='careers grey' href="">Careers</a></div>
+                <div class="link about"><a class='about grey' href="">About</a></div>
             </div>
         </div>
         <div class="signup">
-            <a class='login' href="">Login</a>
-            <button class="register_btn">Resgister</button>   
+            <a class='login grey' href="">Login</a>
+            <button class="register_btn grey">Resgister</button>   
+        </div>
+        <i class="fa-solid fa-bars hamburger"></i>
+        <div class="menu">
+                <img class='close' src="../image/snap_images/icon-close-menu.svg" alt="">
+                <div class="link f_menu">Features <img class='down'src="../image/snap_images/icon-arrow-down.svg" alt=""><img class="up" src="../image/snap_images/icon-arrow-up.svg" alt=""></div>
+                <ul class="f_list">
+                    <li class="list_elm"><img src="../image/snap_images/icon-todo.svg" alt="">Todo List</li>
+                    <li class="list_elm"><img src="../image/snap_images/icon-calendar.svg" alt="">Calender</li>
+                    <li class="list_elm"><img src="../image/snap_images/icon-reminders.svg" alt="">Reminders</li>
+                    <li class="list_elm"><img src="../image/snap_images/icon-planning.svg" alt="">Planning</li>
+                </ul>
+                <div class="link c_menu">Company <img class='down'src="../image/snap_images/icon-arrow-down.svg" alt=""><img class="up" src="../image/snap_images/icon-arrow-up.svg" alt=""></div>
+                <ul class="c_list">
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                </ul>
+                <div class="link"><a class='careers grey' href="">Careers</a></div>
+                <div class="link about"><a class='about grey' href="">About</a></div>
+                <div class="h_signup">
+                    <a class='h_login grey' href="">Login</a>
+                    <button class="register_btn grey">Resgister</button>
+                </div>   
         </div>
     </header>
-    <main>
+    <script src="../java/snap.js"></script>
+    <main class="main">
         <div class="left">
             <div class="heading">Make remote work</div>
             <div class="sub">Get your team in sync, no matter your location.
@@ -46,14 +71,15 @@
                 <button class="learn_btn">Learn more</button>
             </div>
             <div class="spons">
-                <img src="../image/snap_images/client-databiz.svg" alt="">
-                <img src="../image/snap_images/client-audiophile.svg" alt="">
-                <img src="../image/snap_images/client-meet.svg" alt="">
-                <img src="../image/snap_images/client-maker.svg" alt="">
+                <img class="sponsors" src="../image/snap_images/client-databiz.svg" alt="">
+                <img class="sponsors" src="../image/snap_images/client-audiophile.svg" alt="">
+                <img class="sponsors" src="../image/snap_images/client-meet.svg" alt="">
+                <img class="sponsors" src="../image/snap_images/client-maker.svg" alt="">
             </div>
         </div>
         <div class="right">
             <img class="image" src="../image/snap_images/image-hero-desktop.png" alt="">
+            <img class="mobile_img" src="../image/snap_images/image-hero-mobile.png" alt="">
         </div>
     </main>
 </body>
